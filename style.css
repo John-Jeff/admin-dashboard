@@ -157,6 +157,10 @@ aside a {
     gap: 2rem;
 }
 
+h2 {
+    font-size: 28px;
+}
+
 .main-pic {
     background: #4f4f4f;
     width: 80px;
