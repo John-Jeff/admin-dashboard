@@ -21,8 +21,8 @@ a {
 body {
     background: linear-gradient(45deg, #a2d2ff, #ffafcc);
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: auto 4fr;
+    grid-template-rows: auto 5fr;
     gap: 1rem;
     margin: 1rem;
 }
@@ -47,7 +47,7 @@ main {
     background: #f5f5f5;
     grid-column: 2 / 3;
     grid-row: 2;
-    padding: 2rem 3rem;
+    padding: 2rem;
 }
 
 aside,
@@ -182,4 +182,36 @@ h2 {
     padding: .6rem 2rem;
     border-radius: 2rem;
     border-style: none;
+}
+
+/* --Main Content-- */
+
+article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tile {
+    background: #ffffff;
+    border-left: 10px solid #cdb4db;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: .5rem;
+}
+
+.tile-options {
+    text-align: end;
+}
+
+.tile-icon {
+    margin-left: 1rem;
 }
