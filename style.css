@@ -3,7 +3,13 @@
     /* box-sizing: border-box; */
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
 }
@@ -27,7 +33,6 @@ aside {
     grid-column: 1;
     grid-row: 1 / 3;
     padding: 2rem;
-    border-radius: 2rem;
     width: 300px;
 }
 
@@ -35,13 +40,23 @@ header {
     background: #ffffff;
     grid-column: 2 / 3;
     grid-row: 1;
+    padding: 2rem 3rem;
 }
 
 main {
     background: #f5f5f5;
     grid-column: 2 / 3;
     grid-row: 2;
+    padding: 2rem 3rem;
 }
+
+aside,
+header,
+main {
+    border-radius: 2rem;
+}
+
+/* --Aside Content-- */
 
 .header {
     display: flex;
@@ -63,15 +78,17 @@ aside a {
     letter-spacing: 1px;
 }
 
-.options, .alt-options {
+.options,
+.alt-options {
     margin: 2.5rem 0;
 }
 
-.options > div, .alt-options > div {
+.options>div,
+.alt-options>div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     margin: 1rem 0;
     transition: all 200ms;
 }
@@ -79,3 +96,86 @@ aside a {
 /* .options > div:hover, .alt-options > div:hover {
     background: #ffffff;
 } */
+
+/* --Header Content-- */
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.searchbar,
+.head-profile {
+    display: flex;
+    align-items: center;
+}
+
+.searchbar {
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 70%;
+}
+
+.head-profile {
+    justify-content: flex-end;
+    gap: 2rem;
+    width: 30%;
+}
+
+.bar {
+    background: #00000019;
+    width: 90%;
+    height: 32px;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    border-style: none;
+}
+
+.bar:focus {
+    outline: none;
+}
+
+.head-pic {
+    background: #4f4f4f;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.main-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-pic {
+    background: #4f4f4f;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.buttons button {
+    background: #cdb4db;
+    color: #ffffff;
+    width: 120px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: .6rem 2rem;
+    border-radius: 2rem;
+    border-style: none;
+}
