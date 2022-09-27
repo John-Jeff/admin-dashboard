@@ -19,7 +19,8 @@ a {
 }
 
 body {
-    background: linear-gradient(45deg, #a2d2ff, #ffafcc);
+    /* background: linear-gradient(45deg, #a2d2ff, #ffafcc); */
+    background: linear-gradient(45deg, #b298dc, #b9faf8);
     /* height: 100vh; */
     display: grid;
     grid-template-columns: auto 4fr;
